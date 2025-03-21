@@ -55,7 +55,6 @@ Smart Accelerometer is a Flutter application that provides real-time visualizati
 ## Dependencies
 
 - `get`: State management
-- `sensors_plus`: Access to device sensors
 - `syncfusion_flutter_gauges`: Gauge visualizations
 
 ## Usage
