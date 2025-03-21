@@ -122,5 +122,3 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 - [Material Design Guidelines](https://material.io/design)
 
 ---
-
-**Note**: Replace the placeholder image at the top with an actual screenshot of your app before publishing.
