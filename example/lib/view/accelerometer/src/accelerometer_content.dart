@@ -29,7 +29,7 @@ class AccelerometerContent extends StatelessWidget {
               ),
               20.height,
               SizedBox(
-                height: context.smartHeight() - 220,
+                height: context.smartHeight() - 165,
                 width: context.smartWidth(),
                 child: SingleChildScrollView(
                   physics: AlwaysScrollableScrollPhysics(),

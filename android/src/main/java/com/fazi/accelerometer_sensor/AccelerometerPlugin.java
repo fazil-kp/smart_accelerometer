@@ -10,26 +10,28 @@ import io.flutter.embedding.engine.plugins.FlutterPlugin;
 import io.flutter.plugin.common.BinaryMessenger;
 import io.flutter.plugin.common.EventChannel;
 
-/// AccelerometerPlugin 
 public class AccelerometerPlugin implements FlutterPlugin {
 
-  private static final String ACCELEROMETER_CHANNEL_NAME = "fazi.com/accelerometer_sensor/accelerometer";
-  private EventChannel accelerometerChannel;
+    private static final String ACCELEROMETER_CHANNEL_NAME = "fazi.com/accelerometer_sensor/accelerometer";
+    private EventChannel accelerometerChannel;
 
-  private void setupEventChannels(Context context, BinaryMessenger messenger) {
-    accelerometerChannel = new EventChannel(messenger, ACCELEROMETER_CHANNEL_NAME);
-    accelerometerChannel.setStreamHandler(
-            new StreamHandlerImpl((SensorManager) context.getSystemService(Context.SENSOR_SERVICE), Sensor.TYPE_ACCELEROMETER));
-  }
+    private void setupEventChannels(Context context, BinaryMessenger messenger) {
+        SensorManager sensorManager = (SensorManager) context.getSystemService(Context.SENSOR_SERVICE);
+        if (sensorManager != null) {
+            accelerometerChannel = new EventChannel(messenger, ACCELEROMETER_CHANNEL_NAME);
+            accelerometerChannel.setStreamHandler(new StreamHandlerImpl(sensorManager, Sensor.TYPE_ACCELEROMETER));
+        }
+    }
 
-  @Override
-  public void onAttachedToEngine(@NonNull FlutterPluginBinding binding) {
-    final Context context = binding.getApplicationContext();
-    setupEventChannels(context, binding.getBinaryMessenger());
-  }
+    @Override
+    public void onAttachedToEngine(@NonNull FlutterPluginBinding binding) {
+        setupEventChannels(binding.getApplicationContext(), binding.getBinaryMessenger());
+    }
 
-  @Override
-  public void onDetachedFromEngine(@NonNull FlutterPluginBinding binding) {
-    accelerometerChannel.setStreamHandler(null);
-  }
+    @Override
+    public void onDetachedFromEngine(@NonNull FlutterPluginBinding binding) {
+        if (accelerometerChannel != null) {
+            accelerometerChannel.setStreamHandler(null);
+        }
+    }
 }

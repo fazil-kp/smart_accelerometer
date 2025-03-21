@@ -1,5 +1,6 @@
 #ifndef AccelerometerPlugin_h
 #define AccelerometerPlugin_h
+
 #import <Flutter/Flutter.h>
 
 @interface AccelerometerPlugin : NSObject<FlutterPlugin>
