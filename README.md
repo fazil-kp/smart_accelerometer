@@ -1,6 +1,6 @@
 # Smart Accelerometer
 
-<img src="/api/placeholder/800/400" alt="Smart Accelerometer Dashboard" />
+<img src="https://cdn-icons-png.flaticon.com/512/11256/11256156.png" alt="Smart Accelerometer Dashboard" />
 
 ## Overview
 
@@ -32,7 +32,7 @@ Smart Accelerometer is a Flutter application that provides real-time visualizati
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/smart_accelerometer.git
+   git clone https://github.com/fazil-kp/smart_accelerometer.git
    ```
 
 2. Navigate to the project directory:
@@ -123,4 +123,3 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ---
 
-**Note**: Replace the placeholder image at the top with an actual screenshot of your app before publishing.
