@@ -1,3 +1,6 @@
+## 1.0.5
+
+* Plugin Updated
 ## 1.0.4
 
 * Readme Updated
