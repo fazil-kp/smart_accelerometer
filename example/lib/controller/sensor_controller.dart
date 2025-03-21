@@ -5,7 +5,7 @@ import 'package:get/get.dart';
 import 'package:smart_accelerometer/accelerometer.dart';
 
 class SensorController extends GetxController {
-  var accelerometerValues = <double>[0.0, 0.0, 0.0].obs;
+  var accelerometerValues = [0.0, 0.0, 0.0].obs;
   StreamSubscription<AccelerometerEvent>? subscription;
 
   final List<AccelerometerModel> accelerometerGauges = [
