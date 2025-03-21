@@ -1,6 +1,8 @@
 # Smart Accelerometer
 
-<img src="https://cdn-icons-png.flaticon.com/512/11256/11256156.png" alt="Smart Accelerometer Dashboard" />
+<p align="center">
+  <img src="https://cdn-icons-png.flaticon.com/512/11256/11256156.png" alt="Smart Accelerometer Dashboard" width="200" />
+</p>
 
 ## Overview
 
