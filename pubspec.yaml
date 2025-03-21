@@ -1,0 +1,24 @@
+name: smart_accelerometer
+description: A Flutter plugin to retrieve Accelerometer sensor data.
+version: 1.0.0
+homepage: https://github.com/fazil-kp/smart_accelerometer.git
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+  flutter: ">=3.5.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+flutter:
+  plugin:
+    platforms:
+      android:
+        package: com.fazi.accelerometer_sensor
+        pluginClass: AccelerometerPlugin
+      ios:
+        pluginClass: AccelerometerPlugin

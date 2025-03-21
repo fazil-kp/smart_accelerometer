@@ -1,0 +1,23 @@
+PODS:
+  - accelerometer_sensor (0.0.1):
+    - Flutter
+  - Flutter (2.10.2)
+
+DEPENDENCIES:
+  - accelerometer_sensor (from `.symlinks/plugins/accelerometer_sensor/ios`)
+
+SPEC REPOS:
+  trunk:
+    - Flutter
+
+EXTERNAL SOURCES:
+  accelerometer_sensor:
+    :path: ".symlinks/plugins/accelerometer_sensor/ios"
+
+SPEC CHECKSUMS:
+  accelerometer_sensor: 13f46502204bebbd1e06b65ff3d7cdaa03d88b26
+  Flutter: f806e130a7fc533948a62c576e768b4aec6d41d4
+
+PODFILE CHECKSUM: aff02bfeed411c636180d6812254b2daeea14d09
+
+COCOAPODS: 1.11.2
