@@ -1,7 +1,6 @@
 # Smart Accelerometer
 
-<img src="![image](https://github.com/user-attachments/assets/68a6712e-8b37-4870-b8f2-273c2082b7ee)
-" alt="Smart Accelerometer Dashboard" />
+<img src="![image](https://github.com/user-attachments/assets/68a6712e-8b37-4870-b8f2-273c2082b7ee)" alt="Smart Accelerometer Dashboard" />
 
 ## Overview
 
