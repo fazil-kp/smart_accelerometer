@@ -28,7 +28,6 @@ class AccelerometerGauge extends StatelessWidget {
                 maximum: model.maxValue,
                 interval: model.interval,
                 startAngle: 180,
-                endAngle: 360,
                 showLabels: true,
                 showTicks: true,
                 labelOffset: 10,
